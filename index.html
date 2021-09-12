@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://walletapps2021.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>An Empirical Assessment of Security and Privacy Issues of Android Cryptocurrency Wallet Apps</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="./index_files/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="./index_files/bootstrap-theme.min.css">
+<script type="text/javascript" src="./index_files/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="./index_files/bootstrap.min.js"></script>
+<style>
+/* Bootstrap overrides */
+body {
+  /*min-height: 1000px;*/
+  padding-top: 70px;
+}
+
+.navbar-default {
+  height: 65px;
+}
+
+.navbar-default
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 65px;
+  font-size: 18pt;
+}
+
+.navbar-nav > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 65px;
+  font-size: 16pt;
+}
+
+</style>
+
+<script src="./index_files/jquery-3.1.1.min.js"></script>
+<script src="./index_files/highcharts.js"></script>
+<script src="./index_files/data.js"></script>
+<script src="./index_files/exporting.js"></script>
+
+<!-- Additional files for the Highslide popup effect -->
+<script src="./index_files/highslide-full.min.js"></script>
+<script src="./index_files/highslide.config.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="./index_files/highslide.css">
+
+
+<script>
+	// Get the CSV and create the chart
+	//$.getJSON('based.json', function (chart) {
+	//	Highcharts.chart('plot', chart);
+	//});
+  $.getJSON('corr.json', function (chart) {
+		Highcharts.chart('plotcorr', chart);
+	});
+  $.getJSON('daytoday.json', function (chart) {
+    Highcharts.chart('plotdaytoday', chart);
+	});
+
+</script>
+
+
+<style type="text/css">.highslide img {cursor: url(https://www.highcharts.com/highslide/graphics/zoomin.cur), pointer !important;}.highslide-viewport-size {position: fixed; width: 100%; height: 100%; left: 0; top: 0}</style></head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <a href="https://walletapps2021.github.io/index.html" class="navbar-brand">An Empirical Assessment of Security and Privacy Issues of Android Cryptocurrency Wallet Apps</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav ">
+                  <li><a href="https://walletapps2021.github.io/#about">About</a></li>
+                  <li><a href="https://walletapps2021.github.io/#download">Downloads</a></li>
+                  <li><a href="https://walletapps2021.github.io/#contact">Contact</a></li>
+                  <li><a href="https://walletapps2021.github.io/#rpartners">Collaboration</a></li>
+              </ul>
+              <!--<ul class="nav navbar-nav navbar-right">
+                  <li class="mylogo"><a><img src="TU_Muenchen_Logo.svg" height=40px"/></a>&nbsp;</li>
+                  <li class="mylogo"><a><img src="rwth_comsys_bild_rgb.svg" height="40px"/></a>&nbsp;</li>
+                  <li class="mylogo"><a><img src="Usyd_new_logo.png" height="40px"/></a>&nbsp;</li>
+                  <li class="mylogo"><a><img src="neu.png" height="40px"/></a></li>
+              </ul>-->
+              <a href="https://github.com/walletapps2021/walletapps2021.github.io"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:999;" src="./index_files/forkme_right_orange_ff7600.png" alt="Fork me (if you wish) on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" "=""></a>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+    <div class="container">
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        <div class="page-header">
+
+<h2 id="about">About this Study</h2>
+<p style="font-size: 16px">
+  <br>
+
+A cryptocurrency wallet app is a piece of software managing, storing, and generating private keys of cryptocurrency accounts. With the provision of services such as easy access to transaction history, checking account balance besides transmissions of new transactions in distributed networks such as Blockchains, cryptocurrency wallet apps gain unprecedented popularity which in turns attract malicious actors to attack users resulting loss of cryptcurrency assets and leakage of sensitive user data. 
+<br><br>
+
+This paper presents the first large-scale study of Android cryptocurrency wallet apps. We surveyed apps on Google Play to detect and extract meta-data and application packages of 457 cryptocurrency wallet apps. We perform several passive and active measurements designed to investigate the security and privacy features to study the behaviour of cryptocurrency wallet apps. 
+<br><br>
+
+Our analysis includes investigation of cryptocurrency wallets apps’ third-party embedding, malware presences, and exfiltration of users’ sensitive data to third-parties. Our analysis reveals vulnerabilities and privacy issues in cryptocurrency apps including the insecure use of HTTP to serve transactions. 
+
+<br><br>
+</p>
+<br>
+<h2 id="download">Paper and Dataset Download</h2>
+<p style="font-size: 16px">
+A sample of <a href=""> dataset</a> and <a href=""> scripts</a> used in this paper is hosted at on Google Drive. You can contact us on the following email for if you want to use our collected dataset, analysis scripts, or interested in our full paper.<br><br>
+</p>
+
+<!-- col 
+<p style="font-size: 16px">
+
+For data collection and analysis scripts, dataset, and full paperA sample of <a href=""> dataset</a> and <a href=""> scripts</a> used in this paper is hosted at on Google Drive.<br><br>
+</p>
+-->
+
+<h2 id="contact">Contact Person</h2><br>
+
+
+<p style="font-size: 16px">
+	<b>wallet.apps2021 [at] gmail.com</b>
+</p>
+
+<h2 id="rpartner">Collaboration</h2>
+<p style="font-size: 16px">
+
+<br>
+To be added upon acceptance of the paper.
+
+<br><br>
+
+    </div>  <!-- col -->
+  </div>  <!-- row -->
+
+    </div> <!-- /container -->
+
+
+
+</div>
+<!--
+<div class="highslide-container" style="padding: 0px; border: none; margin: 0px; position: absolute; left: 0px; top: 0px; width: 100%; z-index: 1001; direction: ltr;"><a class="highslide-loading" title="Click to cancel" href="javascript:;" style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;">Loading...</a><div style="display: none;"></div><div class="highslide-viewport highslide-viewport-size" style="padding: 0px; border: none; margin: 0px; visibility: hidden;"></div><table cellspacing="0" style="padding: 0px; border: none; margin: 0px; visibility: hidden; position: absolute; border-collapse: collapse; width: 0px;"><tbody style="padding: 0px; border: none; margin: 0px;"><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) 0px 0px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) 0px -40px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) -20px 0px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) 0px -80px; height: 20px; width: 20px;"></td><td class="rounded-white highslide-outline" style="padding: 0px; border: none; margin: 0px; position: relative;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) -20px -80px; height: 20px; width: 20px;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) 0px -20px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) 0px -60px; height: 20px; width: 20px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px; background: url(&quot;https://www.highcharts.com/highslide/graphics/outlines/rounded-white.png&quot;) -20px -20px; height: 20px; width: 20px;"></td></tr></tbody></table><img src="./index_files/rounded-white.png" style="padding: 0px; border: none; margin: 0px; position: absolute; top: -9999px;">
+
+</div>
+-->
+</body></html>
